@@ -11,7 +11,7 @@ export const store = new Vuex.Store({
           "https://www.rei.com/adventures/assets/adventures/images/trip/core/asia/fta_hero",
         id: "1",
         title: "Meetup in New York",
-        date: "2017-07-17",
+        date: new Date(),
         location: "New York",
         description: "New York, New York!"
       },
@@ -20,7 +20,7 @@ export const store = new Vuex.Store({
           "https://www.rei.com/adventures/assets/adventures/images/trip/core/asia/fta_hero",
         id: "2",
         title: "Meetup in Paris",
-        date: "2017-07-19",
+        date: new Date(),
         location: "Paris",
         description: "It's Paris!"
       }

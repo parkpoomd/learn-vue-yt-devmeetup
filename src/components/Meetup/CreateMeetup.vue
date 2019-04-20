@@ -10,7 +10,13 @@
         <form @submit.prevent="onCreateMeetup">
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <v-text-field name="title" label="Title" id="title" v-model="title" required></v-text-field>
+              <v-text-field
+                name="title"
+                label="Title"
+                id="title"
+                v-model="title"
+                required
+              ></v-text-field>
             </v-flex>
           </v-layout>
           <v-layout row>
@@ -37,7 +43,7 @@
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <img :src="imageUrl" height="150">
+              <img :src="imageUrl" height="150" />
             </v-flex>
           </v-layout>
           <v-layout row>
@@ -48,13 +54,11 @@
           <v-layout row class="mb-2">
             <v-flex xs12 sm6 offset-sm3>
               <v-date-picker v-model="date"></v-date-picker>
-              <p>{{ date }}</p>
             </v-flex>
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
               <v-time-picker v-model="time" format="24hr"></v-time-picker>
-              <p>{{ time }}</p>
             </v-flex>
           </v-layout>
           <v-layout row>
@@ -70,8 +74,9 @@
           </v-layout>
           <v-layout row>
             <v-flex xs12 sm6 offset-sm3>
-              <v-btn class="primary" :disabled="!formIsValid" type="submit">Create Meetup</v-btn>
-              {{ submittableDateTime }}
+              <v-btn class="primary" :disabled="!formIsValid" type="submit"
+                >Create Meetup</v-btn
+              >
             </v-flex>
           </v-layout>
         </form>
