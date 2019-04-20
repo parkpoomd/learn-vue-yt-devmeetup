@@ -34,21 +34,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      meetups: [
-        {
-          imgName: "img_mock_new_york.jpg",
-          id: "1",
-          title: "Meetup in New York"
-        },
-        {
-          imgName: "img_mock_paris.jpg",
-          id: "2",
-          title: "Meetup in Paris"
-        }
-      ]
-    };
+  computed: {
+    meetups() {
+      return this.$store.getters.featuredMeetups;
+    }
   },
   methods: {
     onLoadMeetup(id) {
