@@ -6,15 +6,9 @@
           <v-card-title>
             <h3 class="primary--text">{{ meetup.title }}</h3>
           </v-card-title>
-          <v-img
-            :src="require(`@/assets/img/${meetup.imgName}`)"
-            height="400px"
-            contain
-          ></v-img>
+          <v-img :src="meetup.imageUrl" height="400px" contain></v-img>
           <v-card-text>
-            <div class="info--text">
-              {{ meetup.date }} - Where it takes place
-            </div>
+            <div class="info--text">{{ meetup.date }} - Where it takes place</div>
             <div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
               cumque. Unde quibusdam labore id ea nam quaerat adipisci, ipsa

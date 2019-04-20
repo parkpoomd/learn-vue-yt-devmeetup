@@ -6,11 +6,7 @@
           <v-container fluid>
             <v-layout row>
               <v-flex xs5 sm4 md3>
-                <v-img
-                  :src="require(`@/assets/img/${meetup.imgName}`)"
-                  height="130px"
-                  contain
-                ></v-img>
+                <v-img :src="meetup.imageUrl" height="130px" contain></v-img>
               </v-flex>
               <v-flex xs7 sm8 md9>
                 <v-card-title primary-title>

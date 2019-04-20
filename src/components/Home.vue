@@ -5,9 +5,7 @@
         <v-btn large router to="/meetups" class="info">Explore Meetups</v-btn>
       </v-flex>
       <v-flex xs12 sm6 class="text-xs-center text-sm-left">
-        <v-btn large router to="/meetup/new" class="info"
-          >Organize Meetup</v-btn
-        >
+        <v-btn large router to="/meetup/new" class="info">Organize Meetup</v-btn>
       </v-flex>
     </v-layout>
     <v-layout row wrap class="mt-2">
@@ -16,7 +14,7 @@
           <v-carousel-item
             v-for="meetup in meetups"
             :key="meetup.id"
-            :src="require(`@/assets/img/${meetup.imgName}`)"
+            :src="meetup.imageUrl"
             @click="onLoadMeetup(meetup.id)"
           >
             <div class="title">{{ meetup.title }}</div>
