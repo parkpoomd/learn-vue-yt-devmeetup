@@ -8,13 +8,10 @@
           </v-card-title>
           <v-img :src="meetup.imageUrl" height="400px" contain></v-img>
           <v-card-text>
-            <div class="info--text">{{ meetup.date }} - Where it takes place</div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              cumque. Unde quibusdam labore id ea nam quaerat adipisci, ipsa
-              nulla ipsum impedit expedita omnis nihil eius vel reiciendis.
-              Debitis, porro!
+            <div class="info--text">
+              {{ meetup.date }} - {{ meetup.location }}
             </div>
+            <div>{{ meetup.description }}</div>
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
