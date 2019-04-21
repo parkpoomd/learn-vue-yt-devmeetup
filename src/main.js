@@ -24,5 +24,7 @@ new Vue({
       projectId: "devmeetup-bc45a",
       storageBucket: ""
     });
+
+    this.$store.dispatch("loadMeetups");
   }
 }).$mount("#app");
